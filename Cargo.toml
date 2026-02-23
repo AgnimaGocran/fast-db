@@ -1,0 +1,17 @@
+[package]
+name = "fdb"
+version = "0.1.0"
+edition = "2024"
+description = "CLI for quick DBs deployment via kbcli/kubectl"
+authors = ["AgnimaGocran"]
+license = "MIT"
+
+[dependencies]
+nanospinner = "0.1"
+lexopt = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+ureq = "2.9"
+flate2 = "1.0"
+tar = "0.4"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
